@@ -14,18 +14,6 @@ import objects.figure.Figure;
 
 public class ReadData<T> {
 
-    public static <T> List<T> readJson(String filePath, Class<T> type) {
-        Gson gson = new Gson();
-        List<T> objects = null;
-        try {
-            Type listType = TypeToken.getParameterized(List.class, type).getType();
-            objects = gson.fromJson(new FileReader(filePath), listType);
-        } catch (IOException e) {
-            System.out.println("An error occurred while reading the JSON file: " + e.getMessage());
-        }
-        return objects;
-    }
-
     public ObservableList<T> FromJsonToArray(String filePath, Class<T> objectType) throws IOException {
         // String carInfoJson = new String(Files.readAllBytes(Paths.get(filePath)));
         Gson gson = new Gson();

@@ -81,3 +81,6 @@
       -fx-font-size : 60 viewport width;
       -fx-effect : dropshadow(two-pass-box,black, 10, 10, 0, 0);
   }
+
+  .scroll-bar:vertical { -fx-background-color: #805d49; }
+  .scroll-bar {-fx-background-color: #805d49; }

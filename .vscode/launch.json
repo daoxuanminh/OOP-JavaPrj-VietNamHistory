@@ -6,10 +6,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ReadData",
+            "request": "launch",
+            "mainClass": "application.readdata.ReadData",
+            "projectName": "jSoupWebCrawler"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
-            "mainClass": "${file}",
-            
+            "mainClass": "${file}"
         },
         {
             "type": "java",
@@ -17,7 +23,7 @@
             "request": "launch",
             "mainClass": "application.Main",
             "projectName": "jSoupWebCrawler",
-            "vmArgs": "--module-path \"C:\\Program Files\\javafx-sdk-19\\lib\" --add-modules javafx.controls,javafx.fxml",
+            "vmArgs": "--module-path \"C:\\Program Files\\Java\\javafx-sdk-19\\lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
